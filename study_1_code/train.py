@@ -67,7 +67,6 @@ def train_the_model(train_mode, dataset, with_prompt, device):
     # some hyper-parameters
     total_epochs = 20
     num_labels = 20
-    batch_size = 32
     
     # create the model
     model = RobertaForSequenceClassification.from_pretrained('roberta-base', num_labels=20)  
